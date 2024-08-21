@@ -1,6 +1,7 @@
 import type { MetaFunction } from "@remix-run/cloudflare";
 import About from "~/components/home/about";
 import GitHubRepositories from "~/components/home/repositories";
+import Tecnologies from "~/components/home/tecnologies";
 
 export const meta: MetaFunction = () => {
   return [
@@ -17,6 +18,7 @@ export default function Index() {
     <div className="mt-10 px-5">
       <About />
       <GitHubRepositories />
+      <Tecnologies />
     </div>
   );
 }
